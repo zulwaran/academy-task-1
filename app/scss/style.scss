@@ -1,0 +1,136 @@
+@import "libs";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color: #FFFFFF;
+    /* overflow-x: hidden; */
+    font-family: Quicksand;
+    position: relative;
+    min-width: 1920px;
+}
+
+.header{
+    width: 1920px;
+    height: 1029px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url(../img/headerbackground.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    img{
+        position: absolute;
+        top: 500px;
+        left: 520px;
+    }
+}
+.header__navigation{
+    position: relative;
+    display: flex;
+    margin-bottom: 128px;
+}
+.header__logo{
+    width: 179px;
+    height: 100px;
+    background: #0F7BFF;
+    border-radius: 0px 0px 21.5px 21.5px;
+    margin-left: 136px;
+    margin-right: 893px;
+    padding: 25px 23px 32px 23px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+    
+}
+.header__menu{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-right: 52px;
+    li{
+        display: inline-block;
+        margin-right: 36px;
+    }
+    li:nth-last-child(-n+1){
+        margin-right: 0px;
+    }
+}
+.header__button{
+    margin-top: 40px;
+    a{
+        color: #FFFFFF; 
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px; 
+        background: #0063DD;
+        padding: 15px 51px;
+        border-radius: 25px;
+    }
+}
+.header__info{
+    width: 655px;
+    margin: 0 auto;
+}
+.header__title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+    margin: 0 105px 30px;
+}
+.header__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #929292;
+    text-align: center;
+    margin-bottom: 33px;
+}
+.header__buttons{
+    display: flex;
+    margin: 0 auto;
+    width: 364px;
+}
+.header__button-download{
+    margin-right: 30px;
+    a{
+        color: #FFFFFF; 
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px; 
+        padding: 17px 44px 17px 44px;
+        background-color: #0F7BFF;
+        border-radius: 25px;
+    }
+}
+.header__button-trial{
+    a{
+        color: #0F7BFF; 
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px; 
+        padding: 17px 44px 17px 44px;
+        border: 2px solid #0F7BFF;
+        border-radius: 25px;
+    }
+}
+
+
+
+    
