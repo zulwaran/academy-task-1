@@ -10,25 +10,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  <header class="header">
+  <header class="header" id="s1">
     <div class="header__navigation">
       <div class="header__logo">
         AppSon
       </div>
-      <nav class="header__menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Features</a> </li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Pages</a></li>
-        </ul>
-      </nav>
-      <div class="btn">
-        <a href="#">SIGN UP</a>
+      <div class="header__menu">
+        <nav class="nav">
+          <ul>
+            <li><a href="#s1">Home</a></li>
+            <li><a href="#s2">Features</a> </li>
+            <li><a href="#s3">Pricing</a></li>
+            <li><a href="#s4">Pages</a></li>
+          </ul>
+        </nav>
+        <div class="navigation-btn">
+          <a href="#">SIGN UP</a>
+        </div>
       </div>
     </div>
-
     <div class="header__info">
       <div class="title">
         Best Desktop App for You
@@ -38,18 +40,20 @@
         magna aliqua. adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </div>
       <div class="header__info-buttons">
-        <div class="btn btn-download">
+        <div class="btn-download">
           <a href="#">Download</a>
         </div>
-        <div class="btn btn-trial">
+        <div class="btn-trial">
           <a href="#">Free Trial</a>
         </div>
       </div>
     </div>
-    <img src="img/headerdevices.png" alt="" class="devices">
+    <div class="devices">
+      <img src="img/headerDevices.png" alt="">
+    </div>
   </header>
-  <section class="features">
-    <a href="#"><img src="img/scrolldown.svg" alt="" class="scrolldown"></a>
+  <section class="features" id="s2">
+    <a href="#s5" class="scrollDown"><img src="img/scrolldown.svg" alt=""></a>
     <div class="features__content">
       <div class="card">
         <img src="img/featuresIcon-1.svg" alt="">
@@ -109,8 +113,6 @@
       <img src="img/aboutScreen-2.png" alt="">
       <div class="right-side"></div>
     </div>
-
-
   </section>
   <section class="steps">
     <div class="steps__content">
@@ -156,7 +158,7 @@
       </div>
     </div>
   </section>
-  <section class="price">
+  <section class="price" id="s3">
     <div class="price__info">
       <div class="title">
         Pricing Plan
@@ -210,7 +212,7 @@
       </div>
     </div>
   </section>
-  <section class="testimonials">
+  <section class="testimonials" id="s4">
     <div class="testimonials__content">
       <div class="testimonials__title">Trusted By More Than 55M Peoples</div>
       <div class="testimonials__slider">
@@ -339,7 +341,7 @@
         No credit card reauired
       </div>
     </div>
-    <div class="btn">
+    <div class="trial__btn">
       <a href="#">Get Stared</a>
     </div>
   </section>
@@ -354,7 +356,7 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer" id="s5">
     <div class="footer__items">
       <div class="copyright">
         © 2018 Copyright, All Rights Reserved by AppSon
@@ -369,12 +371,11 @@
         <a href="#"><img src="img/footerTwitter.svg" alt=""></a>
         <a href="#"><img src="img/footerYoutube.svg" alt=""></a>
       </div>
-      <a href="#" class="scrollUp"><img src="img/scrollUp.svg" alt=""></a> 
+      <a href="#s1" class="scrollUp"><img src="img/scrollUp.svg" alt=""></a>
     </div>
-  </footer>
+  </footer> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>

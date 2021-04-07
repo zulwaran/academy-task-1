@@ -7,6 +7,16 @@ $(function () {
         dots:true,
         variableWidth:true,
     });
+    function scrollNav() {
+        $('.nav a, .scrollDown, .scrollUp').click(function(){
+          $('html, body').stop().animate({
+            scrollTop: $($(this).attr('href')).offset().top - 160
+          }, 300);
+          return false;
+        });
+      }
+      scrollNav();
+
 
 
 

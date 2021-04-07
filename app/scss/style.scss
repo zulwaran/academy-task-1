@@ -1,119 +1,89 @@
 @import "libs";
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-a{
-    text-decoration: none;
-    color: #000;
-}
-ul,
-li{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-body{
-    background-color: #FFFFFF;
-    overflow-x: hidden;
-    font-family: Quicksand;
-    position: relative;
-    min-width: 320px;
-}
+@import "global";
 
 .header{
     max-width: 1920px;
-    height: 1029px;
+    max-height: 1029px;
+    height: 100%;
     margin: 0 auto;
     position: relative;
     background-image: url(../img/headerbackground.jpg);
     background-repeat: no-repeat;
+    background-size: auto;
     overflow: hidden;
-    .devices{
-        position: absolute;
-        top: 500px;
-        left: 50%;
-        transform: translate(-50%);
-    }
+
 }
 .header__navigation{
     position: relative;
+    width: 1644px;
+    margin: 0 auto;
     display: flex;
-    margin-bottom: 128px;
+    margin-bottom: 88px;
 }
 .header__logo{
     width: 179px;
     height: 100px;
     background: #0F7BFF;
     border-radius: 0px 0px 21.5px 21.5px;
-    margin-left: 136px;
-    margin-right: 893px;
     padding: 25px 23px 32px 23px;
     font-weight: 700;
     font-size: 36px;
     line-height: 45px;
     color: #FFFFFF;
-    
+    margin-right: 893px;
 }
 .header__menu{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    margin-top: 40px;
-    margin-right: 52px;
-    li{
-        display: inline-block;
-        margin-right: 36px;
-    }
-    li:nth-last-child(-n+1){
-        margin-right: 0px;
-    }
-}
-.btn{
-    a{
-        color: #FFFFFF; 
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px; 
-        background: #0063DD;
-        border-radius: 25px;
-    }
-}
-.header__navigation{
-    .btn{
-        margin-top: 40px;
-        a{
-            padding: 15px 51px;
+    display: flex;
+    .nav{
+        ul{
+            display: flex;
+            margin-top: 40px;
+        }
+        li{
+            margin-right: 42px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+            a:hover{
+                color: #0F7CFF;
+            }
         }
     }
 }
-
+.navigation-btn{
+    margin-top: 40px;
+    a{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        background: #0063DD;
+        border-radius: 25px;
+        padding: 15px 51px;
+    }
+}
 .header__info{
     width: 655px;
     margin: 0 auto;
 }
-.title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 45px;
-    color: #000000;
-}
-.text{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 27px;
-    color: #929292;
-}
 .header__info{
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 106px;
     .title{
-        margin: 0 105px 30px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 45px;
+        color: #000000;
     }
     .text{
         margin-bottom: 33px;
-        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: #929292;
     }
 }
 .header__info-buttons{
@@ -126,27 +96,37 @@ body{
     a{
         padding: 17px 44px 17px 44px;
         background-color: #0F7BFF;
+        border-radius: 25px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
     }
 }
 .btn-trial{
     a{
         color: #0F7BFF; 
-        padding: 17px 44px 17px 44px;
+        padding: 17px 47px;
         border: 2px solid #0F7BFF;
-        background-color: inherit;
+        background-color: #FFFFFF;
+        border-radius: 25px;
     }
 }
-
-/* .container{
-    width: 1146px;
-    margin: 0 auto;
-    display: inline;
-} */
+.devices {
+    overflow: hidden;
+    width: 852px;
+    margin: 0 auto -3px;
+    max-width: 80%;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
 .features{
     background-color: #F5FCFD;
     margin: 0 auto;
     max-width: 1920px;
-    .scrolldown{
+    .scrollDown{
         position: absolute;
         left: 50%;
         transform: translate(-50%);
@@ -196,6 +176,7 @@ body{
         font-size: 32px;
         line-height: 40px;
         margin-bottom: 30px;
+        color: #000000;
     }
     .text{
         font-weight: 300;
@@ -302,13 +283,14 @@ body{
     .line{
         position: absolute;
         top: 210px;
-        left: 149px;
-        z-index: -1;
+        left: 528px;
+        z-index: 0;
     }
     .steps__card{
         width: 333px;
         text-align: center;
         margin-right: 58px;
+        z-index: 1;
     }
     .title{
         font-weight: 500;
@@ -354,7 +336,7 @@ body{
     .btn-month{
         background: #0F7BFF;
         border-radius: 25px 0px 0px 25px;
-        padding: 15px 53px;
+        padding: 17px 54px;
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
@@ -366,7 +348,7 @@ body{
         box-sizing: border-box;
         border-radius: 0 25px 25px 0 ;
         background: #FFFFFF;
-        padding: 15px 58px;
+        padding: 15px 57px;
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
@@ -425,6 +407,13 @@ body{
         a{
             padding: 15px 51px;
             margin: 0 98px 46px;
+            background: #0F7BFF;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+
         }
     }
 }
@@ -472,7 +461,7 @@ body{
     }
     .btn{
         a{
-            padding: 15px 49px;
+            padding: 13px 50px;
             margin: 0 96px 46px;
             background-color: inherit;
             color: #0F7BFF ;
@@ -489,6 +478,7 @@ body{
     max-width: 1920px;
     background-image: url(../img/testimonialsBack.png);
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 .testimonials__content{
     margin-left: 890px;
@@ -585,41 +575,42 @@ body{
 .news__content{
     position: relative;
     display: flex;
-}
-.left-side{
-    width: 558px;
-    margin-right: 30px;
-    img{
-        margin-bottom: 30px;
-    }
-    .title{
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 36px;
-        color: #0063DD;
-        margin-bottom: 25px;
-    }
-    .text{
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 24px;
-        color: #000000;
-        margin-bottom: 35px;
-    }
-    a{
-        color: #0063DD;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        position: relative;
-        &::after{
-        content:url(../img/aboutArrow.svg);
-        position: absolute;
-        top: 2px;
-        left: 150px;
+    .left-side{
+        width: 558px;
+        margin-right: 30px;
+        img{
+            margin-bottom: 30px;
+        }
+        .title{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            color: #0063DD;
+            margin-bottom: 25px;
+        }
+        .text{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+            margin-bottom: 35px;
+        }
+        a{
+            color: #0063DD;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            position: relative;
+            &::after{
+            content:url(../img/aboutArrow.svg);
+            position: absolute;
+            top: 2px;
+            left: 150px;
+            }
         }
     }
 }
+
 .about__card{
     max-width: 609px;
     margin-bottom: 33px;
@@ -651,7 +642,7 @@ body{
     background: #F5FCFD;
     max-width: 1920px;
     margin: 0 auto;
-    .btn{
+    &__btn{
         margin-top: 170px;
         a{
             padding: 14px 111px 20px 68px;
@@ -660,6 +651,8 @@ body{
             line-height: 20px;
             color: #FFFFFF;
             position: relative;
+            background: #0F7BFF;
+            border-radius: 25px;
             &::after{
                 content:url(../img/whiteArrow.svg);
                 position: absolute;
@@ -773,6 +766,8 @@ body{
 .scrollUp{
     margin: 27px 0;
 }
+
+@import "media";
 
 
 
