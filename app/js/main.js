@@ -9,18 +9,14 @@ $(function () {
       });
 
     $('.btn-year').on('click', function(){
-      $('.cost-month').addClass('off');
-      $('.cost-month').removeClass('on');
-      $('.cost-year').addClass('on');
-      $('.cost-year').removeClass('off');
+      $('.cost-month').addClass('off').removeClass('on');;
+      $('.cost-year').addClass('on').removeClass('off');
       $('.btn-month').removeClass('active');
       $('.btn-year').addClass('active');
       });
     $('.btn-month').on('click', function(){
-      $('.cost-month').addClass('on');
-      $('.cost-month').removeClass('off');
-      $('.cost-year').addClass('off');
-      $('.cost-year').removeClass('on');
+      $('.cost-month').addClass('on').removeClass('off');
+      $('.cost-year').addClass('off').removeClass('on');
       $('.btn-year').removeClass('active');
       $('.btn-month').addClass('active');
       });

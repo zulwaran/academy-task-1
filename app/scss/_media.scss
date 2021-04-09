@@ -99,7 +99,8 @@
         margin: 0 auto 20px;
     }
     .social {
-        margin: 0 0 20px 0;
+        margin: 0;
+        padding-bottom: 20px;
     }
 
 }
@@ -283,8 +284,9 @@
     .about__card {
         margin: 0 auto 60px;
     }
-    .email{
-        width: 100% !important;
+    .buttons .subscribe__email{
+        width: 100%;
+        font-size: 13px;
     }
 }
 

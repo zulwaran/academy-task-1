@@ -1,0 +1,42 @@
+.trial{
+    background: #F5FCFD;
+    max-width: 1920px;
+}
+.trial__inner{
+    display: flex;
+    .trial__btn{
+        margin: 170px auto 129px;
+        a{
+            padding: 14px 111px 20px 68px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            position: relative;
+            background: #0F7BFF;
+            border-radius: 25px;
+            &::after{
+                content:url(../img/whiteArrow.svg);
+                position: absolute;
+                top: 17px;
+                right: 68px;
+            }
+        }
+    }
+}
+.trial__info{
+    margin: 133px auto 113px;
+    .title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #000000;
+        margin-bottom: 25px;
+    }
+    .text{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+}

@@ -1,0 +1,104 @@
+.about{
+    max-width: 1920px;
+    margin-bottom: 116px;
+    .title{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 30px;
+        color: #000000;
+    }
+    .text{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        margin-bottom: 35px;
+    }
+    a{
+        color: #0063DD;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        &::after{
+        content:url(../img/aboutArrow.svg);
+        position: absolute;
+        top: 0;
+        left: 95px;
+        }
+    }
+}
+.about__container{
+    max-width: 1351px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    .rectangle-1{
+        background: linear-gradient(147.4deg, #0F7BFF 7.27%, #0063DD 93.68%);
+        border-radius: 40px;
+        transform: matrix(0.77, -0.64, -0.64, -0.77, 0, 0);
+        width: 389.71px;
+        height: 482.98px;
+        position: absolute;
+        top: -35px;
+        left: 125px;
+        z-index: -1;
+    }
+    .rectangle-2{
+        background: linear-gradient(147.4deg, #0F7BFF 7.27%, #0063DD 93.68%);
+        border-radius: 40px;
+        transform: matrix(0.77, -0.64, -0.64, -0.77, 0, 0);
+        width: 389.71px;
+        height: 482.98px;
+        position: absolute;
+        bottom: -90px;
+        right: 120px;
+        z-index: -1;
+    }
+    
+}
+.about__block-1{
+    display: flex;
+    margin-bottom: 223px;
+    justify-content: space-between;
+    position: relative;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    .left-side{
+        margin-left: 104px;
+    }
+    .right-side{
+        width: 543px;
+        margin-top: 77px;
+        margin-right: 36px;
+    }
+}
+.about__block-2{
+    display: flex;
+    justify-content: space-between;
+    .right-side{
+        margin-right: 201px;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .rectangle{
+            background: linear-gradient(147.4deg, #0F7BFF 7.27%, #0063DD 93.68%);
+            border-radius: 40px;
+            transform: matrix(0.77, -0.64, -0.64, -0.77, 0, 0);
+            width: 389.71px;
+            height: 482.98px;
+            position: absolute;
+            top:620px;
+            left:850px;
+            z-index: -1;
+        }
+    }
+    .left-side{
+        width: 543px;
+        margin: 77px 0 0 104px;
+    }
+}
