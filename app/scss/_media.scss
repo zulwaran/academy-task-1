@@ -9,11 +9,6 @@
         margin-left: 700px;;
     }
 }
-@media (max-width: 1600px){
-    .scroll {
-        top: -90px;
-    }
-}
 @media (max-width: 1440px){
     .testimonials__left-side {
         top: 125px;
@@ -24,23 +19,59 @@
     .testimonials__content {
         margin-left: 530px;
     }
+    .footer__items{
+        display: block;
+        text-align: center;
+        min-width: 0;
+    }
+    .copyright {
+        margin: 20px 0;
+    }
+    .footer__items ul {
+        max-width: 360px;
+        margin: 0 auto 20px;
+    }
+    .social {
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    .scroll {
+        position: absolute;
+        top: 75px;
+        right: 0;
+    }
+    .scroll img {
+        max-width: 40px;
+    }
+}
+@media (max-width: 1300px){
+    .about__block-1 {
+        justify-content: normal;
+    }
+    .about__block-1 .left-side {
+        margin-right: 57px;
+    }
+    .about__block-2 .left-side {
+        margin-right: 57px;
+    }
 }
 
 @media (max-width: 1240px){
     .about__container{
         max-width: 1067px;
     }
+    .about__block-1 .left-side {
+        margin-left: 0;
+    }
     .about__block-1 .right-side {
         margin: auto 13px auto 0;
     }
-    .about__block-1 .left-side {
-        margin-left: 30px;
-    }
+
     .about__block-2 .left-side {
         margin: auto 15px auto 15px;
     }
     .about__block-2 .right-side {
-        margin-right: 130px;
+        margin-right: 70px;
     }
     .about__container .rectangle-1{
             background: linear-gradient(147.4deg, #0F7BFF 7.27%, #0063DD 93.68%);
@@ -64,6 +95,22 @@
             right: 150px;
             z-index: -1;
         }
+        .steps {
+            margin: 0 auto;
+        }
+        .price__info {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .price__btn {
+            margin: 0 auto;
+        }
+        .price__cost{
+            justify-content: center;
+        }
+        .price__rate-1{
+            margin-right: 0;
+        }
         .price__rate-1 .title {
             margin: 0 0 25px;
             text-align: center;
@@ -75,34 +122,55 @@
         .price__cost {
             margin: 0 auto;
         }
+        .price .container {
+            display: block;
+        }
+        .testimonials{
+            margin: 0 auto;
+        }
 }
 @media (max-width: 1100px){
+    .about {
+        margin-bottom: 0px;
+    }
+    .about__block-1 {
+        margin: 0 auto 100px;
+    }
+    .about__container .rectangle-1,
+    .about__container .rectangle-2{
+        display: none;
+    }
+    .features {
+        padding-bottom: 50px;
+    }
+    .testimonials {
+        height: 460px;
+    }
     .testimonials__left-side{
         display: none;
     }
     .testimonials__content {
-        margin-left: 10px;
+        margin-left: 13px;
+        padding-top: 60px;
     }
     .slick-dots {
         left: 50%;
         transform: translate(-50%);
     }
-    .footer__items{
-        display: block;
-        text-align: center;
+    .news {
+        margin-bottom: 0px;
     }
-    .copyright {
-        margin: 0 0 20px 0;
+    .subscribe__items {
+        margin: 45px auto 0;
     }
-    .footer__items ul {
-        max-width: 360px;
-        margin: 0 auto 20px;
+    .buttons {
+        margin-bottom: 70px;
     }
-    .social {
-        margin: 0;
-        padding-bottom: 20px;
+}
+@media (max-width: 970px){
+    .about__block-1 .left-side {
+        margin-right: 20px;
     }
-
 }
 @media (max-width: 845px){
     .about .title {
@@ -122,18 +190,41 @@
         width: 558px;
         max-width: 100%;
         margin: 0 auto 30px;
+    }.about {
+        margin-bottom: 70px;
     }
     .about__card {
         margin: 0 auto 33px;
     }
+    .about__block-1{
+        display: flex;
+        flex-flow: column;
+        margin: 0 auto 50px;
+    }
+
+    .about__block-1 .left-side {
+        margin: 0 auto 30px;
+    }
+    .about__block-1 .right-side {
+        margin: 0 auto;
+    }
+    .about__block-2{
+        display: flex;
+        flex-flow: column;
+    }
+    .about__block-2 .left-side {
+        margin: 0 auto;
+        order: 1;
+    }
+    .about__block-2 .right-side {
+        margin: 0 auto 30px;
+        order: 0;
+    }
+
 }
 @media (max-width: 790px){
     .navigation-btn a {
         padding: 15px 40px;
-    }
-    .about__container .rectangle-1,
-    .about__container .rectangle-2{
-        display: none;
     }
     .price .container {
         display: block;
@@ -148,16 +239,12 @@
         display: inline-flex;
     }
     .price__rate-1 {
-        width: 362px;
-    }
-    .price__rate-1 img{
-        display: none;
+        width: 250px;
+        min-width: 150px;
     }
     .price__rate-2 {
-        width: 362px;
-    }
-    .price__rate-2 img{
-        display: none;
+        width: 250px;
+        min-width: 150px
     }
 }
 @media (max-width: 750px){
@@ -181,7 +268,8 @@
 }
 @media (max-width: 640px){
     .features {
-        margin-bottom: 90px;
+        margin-bottom: 40px;
+        padding-bottom: 30px;
     }
     .features__content {
         display: block;
@@ -190,23 +278,11 @@
     .card {
         width: 100%;
         height: 100%;
-        margin: 0 auto;
+        margin: 30px auto 0;
         padding-bottom: 30px;
     }
-    .about__block-1 .left-side {
-        display: none;
-    }
-    .about__block-1{
-        margin-bottom: 100px;
-    }
-    .about__block-1 .right-side {
-        margin: 0 auto;
-    }
-    .about__block-2 .right-side {
-        display: none;
-    }
-    .about__block-2 .left-side {
-        margin: 0 auto;
+    .card:nth-child(even) {
+        margin: 30px 0 0 0;
     }
     .steps{
             margin: 0 auto;
@@ -230,33 +306,53 @@
     .steps__items .line{
         display: none;
     }
+    .price__info {
+        margin: 90px auto 0;
+    }
     .testimonials{
         margin-top: 0;
         margin-bottom: 0;
+        height: 450px;
+    }
+    .testimonials__content {
+        padding-top: 50px;
     }
     .testimonials__card{
         width: 100% !important;
     }
     .testimonials__title {
         text-align: center;
+        font-size: 28px;
+    }
+    .trial{
+        padding-bottom: 70px;
     }   
     .trial__inner{
         display: block;
         text-align: center;
     }
     .trial__info {
-        margin: 133px auto 0;
+        padding-top: 50px;
+        margin: 0 auto;
     }
     .trial__info .text {
-        margin-bottom: 25px;
+        margin-bottom: 40px;
     }
     .trial__inner .trial__btn {
-        margin: 0 auto 129px;
+        margin: 0 auto 0px;
     }
-    .subscribe .container{
-        padding: 0 0;
+    .subscribe__items {
+        margin: 45px auto 0;
+    }
+    .subscribe__items .buttons {
+        margin-bottom: 60px;
+    }
+
+    .buttons .subscribe__email {
+        width: 300px;
     }
 }
+
 @media (max-width: 550px){
     .header__navigation {
         display: block;
@@ -284,9 +380,27 @@
     .about__card {
         margin: 0 auto 60px;
     }
+}
+@media (max-width: 490px){
     .buttons .subscribe__email{
         width: 100%;
         font-size: 13px;
+    }
+    .buttons .subscribe__input {
+        padding: 13px 25px;
+        font-size: 13px;
+    }
+}
+@media (max-width: 406px){
+    .about__card img {
+        width: 135px;
+        height: 120px;
+    }
+    .about__card .title {
+        margin-left: 155px;
+    }
+    .about__card .text {
+        margin-left: 155px;
     }
 }
 
@@ -296,9 +410,6 @@
     }
     .btn-download {
         margin: 0 0 40px 0;
-    }
-    .devices{
-        display: none;
     }
     .price__btn .btn-month {
         padding: 14px 40.5px;
@@ -318,8 +429,36 @@
     .price__rate-2 .btn a {
         padding: 13px 30px;
     }
+    .price__rate-1 .title {
+        font-size: 18px;
+    }
+    .price__rate-2 .title {
+        font-size: 18px;
+    }
+    .price__rate-1 .text {
+        font-size: 13px;
+    }
+    .price__rate-2 .text {
+        font-size: 13px;
+    }
+    .price__rate-1 .cost-month {
+        font-size: 28px;
+    }
+    .price__rate-2 .cost-month {
+        font-size: 28px;
+    }
+    .price__rate-1 .cost-year {
+        font-size: 28px;
+    }
+    .price__rate-2 .cost-year {
+        font-size: 28px;
+    }
+    .slick-slide{
+        padding: 0 15px;
+        outline: none;
+    } 
     .testimonials__card{
-        width: 300px !important;
+        max-width: 320px !important;
     }
     .footer__items ul {
         max-width: 320px;
@@ -327,8 +466,32 @@
     .footer__items ul li {
         margin-right: 20px;
     }
-    .scroll {
-        left: 40%;
+    .copyright {
+        font-size: 13px;
+    }
+    .footer__items ul {
+        justify-content: center;
+    }
+    .footer__items ul li a {
+        font-size: 13px; 
+    }
+}
+@media (max-width: 360px){
+    .trial {
+        padding-bottom: 70px;
+    }
+    .trial__info {
+        padding-top: 40px;
+    }
+    .trial__info .title {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .trial__info .text {
+        margin-bottom: 25px;
+    }
+    .about__card {
+        margin: 0 auto 40px;
     }
 }
 @media (max-width: 340px){
@@ -338,6 +501,20 @@
     }
     .about__card img {
         margin-top: 25px;
-
+    }
+    .slick-slide{
+        padding: 0 0px;
+        outline: none;
+    } 
+    .about__card .title {
+        margin-bottom: 15px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .about__card img {
+        margin-top: 45px;
+    }
+    .about__card {
+        margin: 0 auto 70px;
     }
 }

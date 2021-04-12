@@ -3,15 +3,17 @@
     background: #0063DD;
     margin: 0 auto;
     position: relative;
+    display: flex;
 }
 .footer__items{
     display: flex;
-    max-width: 1146px;
+    position: relative;
+    min-width: 1306px;
     margin: 0 auto;
     justify-content: space-between;
     ul{
         display: flex;
-        margin: 51px 0 50px 0;
+        margin: 51px 76px 50px 0;
         li{
             margin-right: 42px;
             &:nth-last-child(-n+1){
@@ -27,20 +29,18 @@
     }
 }
 .copyright{
-    margin: 51px 0 50px 0;
+    margin: 51px 248px 50px 0;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
 }
 .social{
-    margin: 51px 0 44px 0;
+    margin: 51px 144px 44px 0;
     img{
         margin-right: 15px;
     }
 }
 .scroll{
-    position: absolute;
-    right: 158px;
-    top: 28px;
+    margin-top: 28px;
 }

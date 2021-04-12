@@ -1,13 +1,27 @@
 .features{
     background-color: #F5FCFD;
     max-width: 1920px;
-    margin-bottom: 190px;
+    padding-bottom: 130px;
 }
 .scrollDown{
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50px);
     top: -50px;
+    max-width: 114px;
+    max-height: 114px;
+    a{
+        margin: auto;
+        :hover{
+            background: rgba(0, 99, 221, 0.23);
+            padding: 22px;
+            border-radius: 50%;
+        }
+        img{
+            padding: 22px;
+        }
+
+    }
 }
 .features__content{
     display: flex;
@@ -19,7 +33,8 @@
     box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
     border-radius: 5px;
     margin: 0 30px 0 0;
-    height: 290px;
+    height: 100%;
+    background-color: #fff;
     &:nth-last-child(-n+1){
         margin-right: 0px;
     }
@@ -30,7 +45,7 @@
         margin: 40px 0 25px 0;
     }
     .title{
-        font-weight: 500;
+        font-weight: 550;
         font-size: 18px;
         line-height: 22px;
         margin-bottom: 25px;

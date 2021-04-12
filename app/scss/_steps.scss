@@ -45,7 +45,7 @@
         }
     }
     .steps__card{
-        width: 333px;
+        max-width: 333px;
         text-align: center;
         margin-right: 58px;
         z-index: 1;
@@ -54,7 +54,7 @@
         }
     }
     .title{
-        font-weight: 500;
+        font-weight: 550;
         font-size: 18px;
         line-height: 22px;
         color: #000000;

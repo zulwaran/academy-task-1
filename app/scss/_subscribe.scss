@@ -5,7 +5,7 @@
     margin: 0 auto;
 }
 .subscribe__items{
-    margin: 128px auto 0;
+    margin: 118px auto 0;
     .title{
         margin-bottom: 30px;
         font-weight: 700;
@@ -22,9 +22,9 @@
     margin-bottom: 119px;
     .subscribe__email{
         background: #0063DD;
-        border-radius: 25px;
-        width: 558px;
-        padding: 13px 190px 13px 28px;
+        border-radius: 25px 0 0 25px;
+        width: 392px;
+        padding: 13px 28px 13px 28px;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
@@ -36,7 +36,6 @@
         }
     }
     .subscribe__input{
-        position: absolute;
         right: 4px;
         border-radius: 0 25px 25px 0 ;
         background: #FFFFFF;
